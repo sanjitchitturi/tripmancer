@@ -1,0 +1,127 @@
+@font-face {
+  font-family: "Instrument Serif";
+  src: url("/fonts/InstrumentSerif.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Instrument Sans";
+  src: url("/fonts/InstrumentSans.woff2") format("woff2");
+  font-weight: 400 700;
+  font-display: swap;
+}
+
+body, .field, .btn { font-family: "Instrument Sans", sans-serif; }
+.display, .title, .title-sm, .cover h1, .brand {
+  font-family: "Instrument Serif", Georgia, serif;
+  font-weight: 400;
+  letter-spacing: -0.025em;
+}
+.display { font-size: clamp(3rem, 7vw, 6rem); }
+.title { font-size: clamp(2.5rem, 5vw, 4rem); }
+.title-sm { font-size: 2rem; }
+.card, .tile {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  box-shadow: 0 12px 32px rgba(43, 54, 48, 0.08);
+}
+.media {
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: 0 12px 32px rgba(43, 54, 48, 0.08);
+}
+.btn { border-radius: var(--radius); }
+.btn-primary { background: var(--fg); border-color: var(--fg); color: #fff; }
+.btn-primary:hover { background: #34453e; border-color: #34453e; color: #fff; }
+.brand { display: inline-flex; align-items: center; gap: 0.5rem; font-size: 30px; }
+.brand img { width: 136px; height: auto; }
+.cover {
+  display: grid;
+  gap: clamp(1.35rem, 4vw, 3.5rem);
+  align-items: center;
+  padding-block: clamp(1.5rem, 4vw, 3.5rem);
+}
+.cover-copy { min-width: 0; padding-block: 0.5rem; }
+.cover h1 {
+  max-width: 11ch;
+  margin-block: 0.6rem 0.8rem;
+  font-size: clamp(3.6rem, 7vw, 7rem);
+  line-height: 0.94;
+}
+.cover-intro { max-width: 35ch; color: var(--muted); font-size: clamp(1rem, 1.5vw, 1.2rem); line-height: 1.6; }
+.cover-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 0.7rem 1.2rem; margin-top: 1.25rem; }
+.cover-actions .btn, .cover-actions .editorial-link { min-height: 44px; }
+.cover-actions .editorial-link { display: inline-flex; align-items: center; }
+.cover-feature, .guide-card {
+  display: block;
+  min-width: 0;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  background: var(--surface);
+  color: var(--fg);
+  text-decoration: none;
+}
+.cover-feature { background: var(--sage); }
+.cover-photo, .guide-photo { position: relative; background: var(--surface-2); }
+.cover-photo { aspect-ratio: 16 / 10; }
+.cover-caption, .guide-card-body { display: flex; justify-content: space-between; align-items: center; gap: 1rem; padding: 1rem; }
+.cover-location { display: flex; align-items: center; gap: 0.4rem; margin-top: 0.25rem; font-size: 1.15rem; font-weight: 600; }
+.guide-arrow { display: grid; flex: 0 0 auto; width: 2.5rem; height: 2.5rem; place-items: center; border: 1px solid var(--line-strong); border-radius: 50%; background: var(--surface); }
+.cover-feature:hover .guide-arrow, .guide-card:hover .guide-arrow { background: var(--fg); border-color: var(--fg); color: #fff; }
+.editorial-link { text-decoration: underline; text-underline-offset: 0.25em; }
+.guide-shelf { padding-block: clamp(1.5rem, 4vw, 2.8rem) 2rem; border-top: 1px solid var(--line); }
+.guide-shelf header { display: flex; flex-wrap: wrap; align-items: end; justify-content: space-between; gap: 0.75rem 1rem; margin-bottom: 1.2rem; }
+.guide-shelf .title { line-height: 1; margin-top: 0.3rem; }
+.guide-grid { display: grid; gap: clamp(0.9rem, 2vw, 1.5rem); }
+.guide-photo { aspect-ratio: 16 / 10; }
+.guide-card .title-sm { line-height: 1.1; }
+.guide-card-body { align-items: start; }
+.guide-note { margin-top: 0.45rem; color: var(--muted); font-size: 0.94rem; line-height: 1.45; }
+.figure { font-variant-numeric: tabular-nums; }
+.trip-sheet {
+  position: fixed;
+  inset: auto 0.75rem 0.75rem;
+  margin: 0 auto;
+  width: min(calc(100% - 1.5rem), 720px);
+  max-height: 85dvh;
+  padding: 1.25rem;
+  border: 1px solid var(--line-strong);
+  border-radius: var(--radius-xl);
+  background: var(--surface);
+  color: var(--fg);
+  overflow-y: auto;
+  box-shadow: 0 24px 64px rgba(31, 43, 39, 0.18);
+}
+.trip-sheet::backdrop { background: rgba(31, 43, 39, 0.35); }
+.auth-layout { grid-template-columns: 1fr; }
+.auth-form { max-width: 28rem; padding: 1.5rem; border: 1px solid var(--line); border-radius: var(--radius-xl); background: var(--surface); }
+.moment-fields > label { color: var(--muted); }
+.site-header::before, .site-header.is-open::before { background: var(--bg); border-bottom: 1px solid var(--line); }
+.nav-link[aria-current="page"], .menu-btn:hover { background: var(--surface-2); }
+.menu-btn, .chip { border-radius: var(--radius-sm); }
+.chip.is-on, .chip[aria-pressed="true"] { background: var(--fg); color: #fff; }
+.field { background: var(--surface); border-color: var(--line-strong); }
+.field:focus { border-color: var(--fg); box-shadow: 0 0 0 3px rgba(31, 43, 39, 0.12); }
+.day-card, .cta-band, .cost-panel { border-radius: var(--radius-lg); }
+.site-footer { margin-top: 2rem; border-top: 1px solid var(--line); background: var(--surface-2); }
+.glass-icon { border-radius: var(--radius-sm); background: var(--surface-2); color: var(--fg); }
+
+@media (min-width: 900px) {
+  .cover { grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr); }
+  .cover-caption, .guide-card-body { padding: 1.25rem; }
+}
+
+@media (min-width: 720px) {
+  .guide-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
+
+@media (max-width: 767px) {
+  .trip-sheet { inset: auto 0.35rem 0.35rem; width: calc(100% - 0.7rem); }
+}
+
+@media print {
+  body { background: #fff; }
+  .display, .title { color: #000; }
+  .card { break-inside: avoid; }
+}

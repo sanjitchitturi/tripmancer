@@ -1,0 +1,96 @@
+[
+  {
+    "city": "lisbon",
+    "source": "https://unsplash.com/photos/yellow-tram-on-a-street-in-lisbon-portugal-GwNkrz7Q9XY",
+    "creator": "GÜRKAN ŞEN",
+    "alt": "A yellow tram on a cobbled Lisbon street",
+    "crop": "center",
+    "license": "Unsplash License",
+    "rightsReview": "Downloaded from the cited individual Unsplash page on 6 November 2026. Review the source page before each production release."
+  },
+  {
+    "city": "tokyo",
+    "source": "https://unsplash.com/photos/a-busy-street-in-tokyo-at-night-13hAeb_-Yts",
+    "creator": "mos design",
+    "alt": "A lively Tokyo street after dark",
+    "crop": "center",
+    "license": "Unsplash License",
+    "rightsReview": "Downloaded from the cited individual Unsplash page on 6 November 2026. Review the source page before each production release."
+  },
+  {
+    "city": "mexico-city",
+    "source": "https://unsplash.com/photos/people-crossing-a-street-in-a-city-160OYF2vHbI",
+    "creator": "Kaden Taylor",
+    "alt": "People crossing a street in central Mexico City",
+    "crop": "center",
+    "license": "Unsplash License",
+    "rightsReview": "Downloaded from the cited individual Unsplash page on 6 November 2026. Review the source page before each production release."
+  },
+  {
+    "city": "marrakech",
+    "source": "https://images.unsplash.com/photo-1597212618440-806262de4f6b",
+    "alt": "The Koutoubia minaret in Marrakech with the Atlas behind it",
+    "crop": "center",
+    "rightsReview": "Verify original photo and applicable Unsplash license before production"
+  },
+  {
+    "city": "seoul",
+    "source": "https://unsplash.com/photos/a-large-city-with-lots-of-tall-buildings-80jaaEDI2Ms",
+    "creator": "Sung Jin Cho",
+    "alt": "A broad city view in Seoul",
+    "crop": "center",
+    "license": "Unsplash License",
+    "rightsReview": "Downloaded from the cited individual Unsplash page on 6 November 2026. Review the source page before each production release."
+  },
+  {
+    "city": "goa",
+    "source": "https://unsplash.com/photos/a-person-standing-in-the-water-at-the-beach--TUTDBzld5o",
+    "creator": "Sameer Srivastava",
+    "alt": "A traveler standing in the sea in Goa",
+    "crop": "center",
+    "license": "Unsplash License",
+    "rightsReview": "Downloaded from the cited individual Unsplash page on 6 November 2026. Review the source page before each production release."
+  },
+  {
+    "city": "jaipur",
+    "source": "https://images.unsplash.com/photo-1477587458883-47145ed94245",
+    "alt": "Hawa Mahal in Jaipur",
+    "crop": "center",
+    "rightsReview": "Verify original photo and applicable Unsplash license before production"
+  },
+  {
+    "city": "kochi",
+    "source": "https://images.unsplash.com/photo-1593693397690-362cb9666fc2",
+    "alt": "A houseboat on the backwaters near Kochi",
+    "crop": "center",
+    "rightsReview": "Verify original photo and applicable Unsplash license before production"
+  },
+  {
+    "city": "dubai",
+    "source": "https://images.unsplash.com/photo-1512453979798-5ea266f8880c",
+    "alt": "The Dubai skyline and Burj Khalifa at sunset",
+    "crop": "center",
+    "rightsReview": "Verify original photo and applicable Unsplash license before production"
+  },
+  {
+    "city": "singapore",
+    "source": "https://images.unsplash.com/photo-1525625293386-3f8f99389edd",
+    "alt": "Marina Bay Sands and the Singapore waterfront",
+    "crop": "center",
+    "rightsReview": "Verify original photo and applicable Unsplash license before production"
+  },
+  {
+    "city": "bangkok",
+    "source": "https://images.unsplash.com/photo-1563492065599-3520f775eeed",
+    "alt": "Temple roofs at the Grand Palace in Bangkok",
+    "crop": "center",
+    "rightsReview": "Verify original photo and applicable Unsplash license before production"
+  },
+  {
+    "city": "bali",
+    "source": "https://images.unsplash.com/photo-1537996194471-e657df975ab4",
+    "alt": "A lakeside temple in Bali",
+    "crop": "center",
+    "rightsReview": "Verify original photo and applicable Unsplash license before production"
+  }
+]
