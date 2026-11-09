@@ -1,0 +1,124 @@
+@font-face {
+  font-family: "Instrument Serif";
+  src: url("/fonts/InstrumentSerif.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Instrument Sans";
+  src: url("/fonts/InstrumentSans.woff2") format("woff2");
+  font-weight: 400 700;
+  font-display: swap;
+}
+
+body, .field, .btn { font-family: "Instrument Sans", sans-serif; }
+.display, .title, .title-sm, .cover h1, .cover-intro, .brand {
+  font-family: "Instrument Serif", Georgia, serif;
+  font-weight: 400;
+  letter-spacing: -0.025em;
+}
+.display { font-size: clamp(3rem, 7vw, 6rem); }
+.title { font-size: clamp(2.5rem, 5vw, 4rem); }
+.title-sm { font-size: 2rem; }
+.card, .tile, .moment-card {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  box-shadow: 0 12px 32px rgba(43, 54, 48, 0.08);
+}
+.media {
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: 0 12px 32px rgba(43, 54, 48, 0.08);
+}
+.btn { border-radius: var(--radius); }
+.btn-primary { background: var(--fg); border-color: var(--fg); color: #fff; }
+.btn-primary:hover { background: #34453e; border-color: #34453e; color: #fff; }
+.brand { display: inline-flex; align-items: center; gap: 0.5rem; font-size: 30px; }
+.brand img { width: 136px; height: auto; }
+.cover {
+  display: grid;
+  gap: 2rem;
+  align-items: center;
+  padding-block: clamp(2rem, 5vw, 4rem);
+}
+.cover-copy {
+  display: grid;
+  justify-items: start;
+  gap: 1.15rem;
+  max-width: 42ch;
+  padding: clamp(1.35rem, 3vw, 2.25rem);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-xl);
+  background: var(--surface);
+}
+.cover h1 { font-size: clamp(3.5rem, 8vw, 6rem); line-height: 0.98; }
+.cover-intro { font-size: clamp(2rem, 3vw, 2.8rem); line-height: 1.05; }
+.cover-photo {
+  position: relative;
+  aspect-ratio: 5 / 4;
+  background: var(--surface-2);
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+}
+.cover figcaption {
+  display: inline-flex;
+  margin-top: -1.25rem;
+  margin-left: 1rem;
+  padding: 0.45rem 0.75rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
+  background: var(--surface);
+  font-size: 0.8rem;
+  color: var(--muted);
+}
+.editorial-link { text-decoration: underline; text-underline-offset: 0.25em; }
+.guide-shelf { padding-block: 3rem 5rem; border-top: 1px solid var(--line); }
+.guide-shelf header { display: flex; align-items: baseline; justify-content: space-between; gap: 1rem; margin-bottom: 2rem; }
+.guide-grid { display: grid; gap: 2rem; }
+.figure { font-variant-numeric: tabular-nums; }
+.trip-sheet {
+  position: fixed;
+  inset: auto 0.75rem 0.75rem;
+  margin: 0 auto;
+  width: min(calc(100% - 1.5rem), 720px);
+  max-height: 85dvh;
+  padding: 1.25rem;
+  border: 1px solid var(--line-strong);
+  border-radius: var(--radius-xl);
+  background: var(--surface);
+  color: var(--fg);
+  overflow-y: auto;
+  box-shadow: 0 24px 64px rgba(31, 43, 39, 0.18);
+}
+.trip-sheet::backdrop { background: rgba(31, 43, 39, 0.35); }
+.auth-layout { grid-template-columns: 1fr; }
+.auth-form { max-width: 28rem; padding: 1.5rem; border: 1px solid var(--line); border-radius: var(--radius-xl); background: var(--surface); }
+.moment-fields > label { color: var(--muted); }
+.site-header::before, .site-header.is-open::before { background: var(--bg); border-bottom: 1px solid var(--line); }
+.nav-link[aria-current="page"], .menu-btn:hover { background: var(--surface-2); }
+.menu-btn, .chip { border-radius: var(--radius-sm); }
+.chip.is-on, .chip[aria-pressed="true"] { background: var(--fg); color: #fff; }
+.field { background: var(--surface); border-color: var(--line-strong); }
+.field:focus { border-color: var(--fg); box-shadow: 0 0 0 3px rgba(31, 43, 39, 0.12); }
+.day-card, .cta-band, .cost-panel, .moment-card { border-radius: var(--radius-lg); }
+.site-footer { margin-top: 2rem; border-top: 1px solid var(--line); background: var(--surface-2); }
+.glass-icon { border-radius: var(--radius-sm); background: var(--surface-2); color: var(--fg); }
+
+@media (min-width: 768px) {
+  .cover { grid-template-columns: repeat(12, minmax(0, 1fr)); }
+  .cover-copy { grid-column: span 5; }
+  .cover figure { grid-column: span 7; }
+  .guide-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
+
+@media (max-width: 767px) {
+  .cover { gap: 1.25rem; }
+  .guide-grid { gap: 2rem; }
+  .trip-sheet { inset: auto 0.35rem 0.35rem; width: calc(100% - 0.7rem); }
+}
+
+@media print {
+  body { background: #fff; }
+  .display, .title { color: #000; }
+  .card { break-inside: avoid; }
+}
